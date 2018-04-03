@@ -20,7 +20,7 @@
 
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
+f
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -31,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Activate Static Visual Charts</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -39,10 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#manuscript">Manuscript</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#manuscript">Introduction</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Gallery</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#c_design">Controlled Experiment</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#o_survey">Open-end Survey</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Team</a>
@@ -55,8 +61,8 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/header.png" alt="">
-        <h3 class="text-uppercase mb-0">Activate Static Visual Charts with Kinetic Effects</h3>
+        <!-- <img class="img-fluid mb-5 d-block mx-auto" src="img/header.png" alt=""> -->
+        <h3 class="text-uppercase mb-0">Enhancing Static Visual Charts with Dynamic Effects</h3>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0"><a href="https://github.com/2018study/dynamicviz" style="color: #e05b49; text-decoration: underline">Fork me on Github</a></h2>
       </div>
@@ -66,48 +72,68 @@
     <!-- Contact Section -->
     <section id="manuscript">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Manuscript</h2>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Introduction</h2>
         <hr class="star-dark mb-5">
 
-        <!-- marching ants -->
          <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-12">
+              <H3>Abstract </H3>
+              <p>
+                  For centuries, knowledge sharing and exchange of ideas have relied upon the usage of visual charts and diagrams designed to be viewed in hard-copy form.
+To emphasize and draw attention to certain aspects of the data, static cues like color and geometric shapes were utilized with great success.
+Nowadays, digital displays are ubiquitous in the visualization of any form of data, lifting the confines of static presentations.
+In this work, we propose taking a natural step forward, and incorporate data-driven dynamic enhancements into otherwise static visualization schemes, for the purpose of element emphasis and attention guidance. 
+Given a chart or a diagram, and their underlying data, we perform a simple analysis to determine elements and attributes of importance. According to their characteristics, a suitable dynamic effect is applied directly onto the displayed data, creating an illusion of a visualization brought to life.
+We experiment with three versatile effects, namely, <b>marching ants</b>, <b>eometry deformation</b> and <b>blinking</b>, and provide practical details regarding their mode of operation and extent of interaction with existing visual channels.
+We examine the impact and effectiveness of our enhancements via two user studies designed to assess personal preference as well as gauge the influence of visual dynamic effects on human perception in terms of fast, yet accurate visual understanding. 
+              </p>
+            </div>
+        </div>
+
+        <!-- marching ants -->
+          <div class="row">
+            <div class="col-md-12">
               <H3> <img src="img/ma_icon.png" style="width: 70px"></img> Marching Ants </H3>
               <p>
-                  <H5 style="display:inline">Five Design Dimensions</H5> a Marching Ants dynamics is defined by five design dimensions, i.e., ant, path, boundary, marching speed, gap between ants and the marching boundary. Ants are what move in the dynamics. Extended from typical dashline, ants can be in any shapes. The symbols of ants can be used to deliver the semantic message. Path defines where the ants march and head for. Path provides an intuitive perception of direction. But it is not necessary to always give the direction information. For example, marching ants along a spiral path inside a circle is a dynamic texture without direction. Boundary defines the borders where ants are in. Together with path, marching ants effect are bounded within a specific area, which used to be the extent of visual element. The speed and gap between ants give the impression of what pace ants marches along the path. 
+                 Borrowing the idea from marching ants selection of computer graphics programs, marching ants is extended to a dynamics where the patterns shift along a path at certain speed for an illusion of ants marching. Linking to daily experience, marching ants provides direct perception of direction and  speed. With rich design variation, it is also capable of indicating semantic message. As an covering over visual elements, marching ants dynamic is orthogonal to other visual channels, except potential interference when there is wispy texture in visualization.
               </p>
             </div>
-            <div class="col-md-4">
+       <!--      <div class="col-md-4">
               <img src="img/circos.gif" style="width:100%"></img>
-            </div>
+            </div> -->
         </div>
 
-        <div class="row">
-            <div class="col-md-4">                          
-              <img src="img/circos.gif" style="width:100%"></img>
-            </div>
-            <div class="col-md-8">
-               <p>
-                  <H5 style="display:inline">Variation of Marching Ants</H5> with the variation of the five design dimensions, Marching Ants demonstrates its richness in expressive possibility. As Figure~\ref{fig:ma_example} exemplified, marching ants can be flexibly covered over visualization with with other visual features and provides numerical, directional and semantic information. Interesting kinetic effects can be created by locating the marching path within an area or wrapping its borders. Driven ants with different speeds and gaps, marching ants expands its ability in different levels of attention attraction and numerical information indication. When adding a little direction design to the ant , marching ants provide an intuitive indication of the directional information. The design of ant can be semantically adjusted to the context. For example in the right column of Figure~\ref{fig:ma_example}, vivid ants are placed along the path to facilitate the visualization reading via less explanation.  
-              </p>
-            </div>
-        </div>
-
-        <!-- Geometry Deformation -->
-         <div class="row">
-            <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
               <H3> <img src="img/gd_icon.png" style="width: 70px"></img> Geometry Deformation </H3>
               <p>
-                  <H5 style="display:inline">XX Design Dimensions</H5> a Geometry Deformation is ...
+                 GD applies potentially exaggerated spatial modifications to the shape or placement of visual elements, at a certain pace.
+The joint transformation of individual elements can implicitly convey the existence of groups and relationships among parties. 
+Beyond indication of such properties, numerical information can be encoded by adjusting the extent of applied deformation, from subtle to extreme.
+Since GD shifts or rescales elements, it may interfere with existing visual channels that utilize element size and location to express certain attributes.
               </p>
             </div>
-            <div class="col-md-4">
+          <!--   <div class="col-md-4">
               <img src="img/circos.gif" style="width:100%"></img>
-            </div>
+            </div> -->
         </div>
 
+          <div class="row">
+            <div class="col-md-12">
+              <H3> <img src="img/f_icon.png" style="width: 70px"></img> Geometry Deformation </H3>
+              <p>
+                 
+Blinkng refers to a set of effects that apply repetitive changes to elements, such as brightness, saturation, color and border emphasis.
+These effects deliberately operate at a low rate, which is less than continuous (50 frames per second), so as to attract attention to the discontinuous change.
+Activating blinking effects in coherent phases creates a sense of cohort among elements belonging to the same.
+An effect applied directly onto the element may cause interference via color distortion, as opposed to one applied around the element (border). 
+              </p>
+            </div>
+          <!--   <div class="col-md-4">
+              <img src="img/circos.gif" style="width:100%"></img>
+            </div> -->
         </div>
-      </div>
+      
     </section>
 
     <!-- Portfolio Grid Section -->
@@ -115,69 +141,169 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Gallery</h2>
         <hr class="star-dark mb-5">
+
         <div class="row">
           <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+           <!--  <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/gallery/circos.gif" style="width:w-100; height:h-100">
-            </a>
+              </div>       -->        
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/circos.mp4" type="video/mp4">             
+              </video>
+            <!-- </a> -->
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+
+          <div class="col-md-6 col-lg-8">
+         <!--    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </a>
+              </div> -->
+               <video autoplay loop>
+                <source src="img/gallery/boxplot.mp4" type="video/mp4">             
+              </video>
+              <!-- <img class="img-fluid" src="img/gallery/circos.gif" alt=""> -->
+            <!-- </a> -->
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+
+          <div class="col-md-6 col-lg-6">
+       <!--      <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </a>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/graph.mp4" type="video/mp4">             
+              </video>
+            <!-- </a> -->
           </div>
-          <div class="col-md-6 col-lg-4">
+
+          <div class="col-md-6 col-lg-6">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/matrix.mp4" type="video/mp4">             
+              </video>
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+
+          <div class="col-md-6 col-lg-6">
+          <!--   <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/treemap.mp4" type="video/mp4">             
+              </video>
+            <!-- </a> -->
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+
+          <div class="col-md-6 col-lg-6">
+            <!-- <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/circlepacking.mp4" type="video/mp4">             
+              </video>
+            <!-- </a> -->
+          <!-- </div> -->
         </div>
+
+      <div class="col-md-6 col-lg-6">
+            <!-- <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/minard1858world2.mov" type="video/mp4">             
+              </video>
+            <!-- </a> -->
+          <!-- </div> -->
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <!-- <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/mindmap_tune1.mov" type="video/mp4">             
+              </video>
+            <!-- </a> -->
+          <!-- </div> -->
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+            <!-- <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div> -->
+               <video width="100%" height="100%" autoplay loop>
+                <source src="img/gallery/Playfair1821Pric.mov" type="video/mp4">             
+              </video>
+            <!-- </a> -->
+          <!-- </div> -->
+        </div>
+          
+
       </div>
+    </section>
+
+       <!-- Contact Section -->
+    <section id="c_design">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Controlled Experiment</h2>
+        <hr class="star-dark mb-5">         
+           <div class="row">
+            <p> The controlled experiment is designed to evaluate the contribution of dynamic enhancements to static visualizations, and to assess the potential of these enhancements to facilitate faster and more accurate visual understanding. </p>
+            <p>14 participants were randomly divided into two groups, A and B, such that group A was given the six aforementioned visualization tests in alternation between static and dynamic, and group B was given its complement set. That is, each participant viewed and was tested on only one version of each visualization - either the static or the dynamic. Belows are the tests for the two groups: </p>
+           </div>
+           <div class="row">            
+            <a href="./img/evaluation/evaluation1.pptx"> Group A: Test #1</a>
+          </div>
+
+           <div class="row">
+            <a href="./img/evaluation/evaluation2.pptx"> Group B: Test #2</a>
+          </div>
+
+        </div>
+    </section>
+
+
+    <!-- Open-End Section -->
+    <section id="o_survey">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Open-end Survey</h2>
+        <hr class="star-dark mb-5">
+           <div class="row">
+            <p>Open-end survey is a larger scale survey designed to assess general personal preference of viewers, whether they are more partial to static or dynamic visualizations of different types, without delving deep into performing analysis tasks. </p>
+            <p>
+              The survey is composed of two parts. The first contains 10 binary personal preference questions. The second part aims to help shed light on the reasoning behind participants’ choices, by prompting them to select possible motives from a multiple choice menu, and allowing them to leave comments and remarks freely. Below is the open-end survey:
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbYfVCJlccGhQaY3CUjLsaLe9dJH7Utlug6_JY5KK6wPYsXQ/viewform?usp=sf_link"> Visualization charts - static vs. dynamic </a>
+          </div>
+
+        </div>
     </section>
 
 
@@ -187,45 +313,7 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Meet the Team</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
+        <img width="100%" height="100%" src="img/ant_team.png"></img>
         </div>
       </div>
     </section>
@@ -267,6 +355,7 @@
       </div>
     </div>
 
+
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
       <div class="portfolio-modal-dialog bg-white">
@@ -276,10 +365,13 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Circos</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <!-- <img class="img-fluid mb-5" src="img/gallery/circos.gif" alt=""> -->
+              <video width="600" height="400" autoplay loop>
+                <source src="img/gallery/boxplot.mp4" type="video/mp4">             
+              </video>
+              <p class="mb-5">New One</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
