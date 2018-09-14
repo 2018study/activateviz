@@ -12,6 +12,16 @@ h6 {
   font-family: 'Montserrat';
 }
 
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 0.75fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1px 2px;
+  grid-template-areas: ". .";
+}
+
+
 hr.star-light,
 hr.star-dark {
   max-width: 15rem;
@@ -133,8 +143,8 @@ section h2 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+/*    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;*/
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -344,7 +354,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #2fa859 !important;
+  background-color: #efb138!important;
   /*background-color: #18BC9C !important;*/
 }
 

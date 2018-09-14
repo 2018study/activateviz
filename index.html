@@ -46,7 +46,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 f
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
 
   </head>
 
@@ -63,7 +63,7 @@ f
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#manuscript">Introduction</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#manuscript">Dynamic Effects</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Gallery</a>
@@ -86,14 +86,15 @@ f
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <!-- <div class='div'> -->
-        <img src="./img/header.gif" style="width:80%; padding:20px"></img>
+        <img src="./img/header_new_sm.gif" style="width:100%;"></img>
       
  <!--   <img src="./img/header_new.gif" style="width:80%;"></img>
         <img src="./img/header_new.gif" style="width:80%; padding: 0px 0px 0px 20px"></img> -->
         <!-- </div> -->
-        <h3 class="text-uppercase mb-0">Bring Charts Alive: Enhancing Static Visual Charts with Dynamic Effects</h3>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0"><a href="https://github.com/2018study/dynamicviz.git" style="color: #e05b49; text-decoration: underline">Fork me on Github</a></h2>
+ <!--        <h3 class="text-uppercase mb-0" style="text-align:left">Bringing Charts to Life:<h3>
+          <h3 class="text-uppercase mb-0" style="text-align:left">Enhancing Static Visualizations with Dynamic Effects</h3> -->
+        <!-- <hr class="star-light"> -->
+        <!-- <h2 class="font-weight-light mb-0"><a href="https://github.com/2018study/dynamicviz.git" style="color: #e05b49; text-decoration: underline">Fork me on Github</a></h2> -->
       </div>
     </header>
 
@@ -101,26 +102,18 @@ f
     <!-- Contact Section -->
     <section id="manuscript">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Introduction</h2>
+        <!-- <h2 class="text-center text-uppercase text-secondary mb-0">Introduction</h2> -->
         <hr class="star-dark mb-5">
 
          <div class="row">
             <div class="col-md-12">
-              <H3>Abstract </H3>
-              <p>
-                  For centuries, knowledge sharing and exchange of ideas have relied upon the usage of visual charts and diagrams designed to be viewed in hard-copy form.
-To emphasize and draw attention to certain aspects of the data, static cues like color and geometric shapes were utilized with great success.
-Nowadays, digital displays are ubiquitous in the visualization of any form of data, lifting the confines of static presentations.
-In this work, we propose taking a natural step forward, and incorporate data-driven dynamic enhancements into otherwise static visualization schemes, for the purpose of element emphasis and attention guidance. 
-Given a chart or a diagram, and their underlying data, we perform a simple analysis to determine elements and attributes of importance. According to their characteristics, a suitable dynamic effect is applied directly onto the displayed data, creating an illusion of a visualization brought to life.
-We experiment with three versatile effects, namely, <b>marching ants</b>, <b>geometry deformation</b> and <b>blinking</b>, and provide practical details regarding their mode of operation and extent of interaction with existing visual channels.
-We examine the impact and effectiveness of our enhancements via two user studies designed to assess personal preference as well as gauge the influence of visual dynamic effects on human perception in terms of fast, yet accurate visual understanding. 
-              </p>
+              <!-- <H3>Abstract </H3> -->
+              The ubiquity of digital displays lifts the confines of static visualization. This homepage introduces Data-driven Dynamic Effect as a natural step forward to bring static visualization to life, for the purpose of element emphasis and attention guidance. 
             </div>
         </div>
 
         <!-- marching ants -->
-          <div class="row">
+          <div class="row" style="padding: 10px">
               <div class="col-md-12"><H3> <img src="img/ma_icon.png" style="width: 70px"></img> Marching Ants </H3></div>
             <div class="col-md-8">
               <p>
@@ -128,7 +121,7 @@ We examine the impact and effectiveness of our enhancements via two user studies
               </p>
             </div>
             <div class="col-md-4">
-                <img src="img/exp/ma_exp.gif" style="width:100%"></img>
+                <img src="img/ma_exp_new.gif" style="width:120%"></img>
             </div>
         </div>
 
@@ -143,24 +136,23 @@ Since GD shifts or rescales elements, it may interfere with existing visual chan
               </p>
             </div>
             <div class="col-md-4">
-              <img src="img/exp/gd_exp.gif" style="width:120%"></img>
+              <img src="img/gd_exp_new.gif" style="width:120%"></img>
             </div>
         </div>
 
           <div class="row">
-            <div class='col-md-12'>  <H3> <img src="img/f_icon.png" style="width: 70px"></img> Blinking </H3></div>
+            <div class='col-md-12'>  <H3> <img src="img/f_icon.png" style="width: 70px"></img> Gradual Appearance </H3></div>
             <div class="col-md-8">            
-              <p>
+              <p style='color:red'>
                  
-Blinkng refers to a set of effects that apply repetitive changes to elements, such as brightness, saturation, color and border emphasis.
+Gradual Appearance refers to a set of effects that apply repetitive changes to elements, such as brightness, saturation, color and border emphasis.
 These effects deliberately operate at a low rate, which is less than continuous (50 frames per second), so as to attract attention to the discontinuous change.
-Activating blinking effects in coherent phases creates a sense of cohort among elements belonging to the same.
-An effect applied directly onto the element may cause interference via color distortion, as opposed to one applied around the element (border). 
+Activating blinking effects in coherent phases creates a sense of cohort among elements belonging to the same. An effect applied directly onto the element may cause interference via color distortion, as opposed to one applied around the element (border). 
               </p>
             </div>
 
             <div class="col-md-4">
-              <img src="img/exp/blinking_exp.gif" style="width:100%"></img>
+              <img src="img/ga_exp_new.gif" style="width:120%"></img>
             </div>
         </div>
       
